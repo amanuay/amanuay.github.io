@@ -261,6 +261,12 @@ span {
 }
 
 @media (max-width: 450px) {
+
+  .hero {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+
   .links {
     position: sticky;
     top: 0;
