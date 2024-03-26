@@ -95,6 +95,10 @@ span {
   height: 90vh;
 }
 
+.section2 h4 {
+  padding: 16px;
+}
+
 .links {
   position: sticky;
   top: 0;
