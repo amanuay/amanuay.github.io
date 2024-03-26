@@ -52,6 +52,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  -webkit-backdrop-filter: blur(32px);
   backdrop-filter: blur(32px);
 
 }
@@ -233,9 +234,18 @@ span {
 
 .section6 h4 {
   margin: 0;
-
   padding: 0;
 }
+
+
+.section6 a:hover {
+  background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+}
+
 
 
 

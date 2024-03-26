@@ -17,7 +17,7 @@ function App() {
     }
   );
 
-  useMotionValueEvent(scrollYProgress, 'change', (val) => console.log('ScrollProgress change', val));
+  // useMotionValueEvent(scrollYProgress, 'change', (val) => console.log('ScrollProgress change', val));
   useMotionValueEvent(scrollYProgress, 'change', (val) => setscrollpercent(`${val * -100}%`));
 
 
