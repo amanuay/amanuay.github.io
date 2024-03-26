@@ -1,0 +1,58 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  transform: rotate(180deg);
+}
+
+.outer-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.inner-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-element {
+  background-color: white;
+  border-radius: 50%;
+  height: 100%;
+}
+
+.inner-element {
+  animation: squeeze 8s ease-in-out alternate infinite;
+}
+
+.inner-container {
+  animation: squeeze 8s ease-in-out alternate infinite;
+}
+
+.outer-container:first-child {
+  animation: alternate;
+  animation-name: squeeze;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes squeeze {
+  0% {
+    width: 100%;
+  }
+
+  50% {
+    width: 50%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
