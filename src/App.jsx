@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.css'
 import Pattern from './pattern'
 import { useScroll, useMotionValueEvent, useAnimate, motion } from 'framer-motion'
@@ -17,14 +17,7 @@ function App() {
     }
   );
 
-  // useMotionValueEvent(scrollYProgress, 'change', (val) => console.log('ScrollProgress change', val));
   useMotionValueEvent(scrollYProgress, 'change', (val) => setscrollpercent(`${val * -100}%`));
-
-
-
-
-
-
 
   return (
     <>
@@ -80,6 +73,7 @@ function App() {
               <h1 id='scroller' style={{ paddingLeft: '10vw' }}> Scrolling sideways for a bit because, why not? Everyone's doing it for some reason.</h1>
             </motion.div>
           </div>
+
           <div className="marquee">
             <h4> Someone deprecated the good old html &lt;marquee&gt; so implementing it with CSS.
               Someone deprecated the good old html &lt;marquee&gt; so implementing it with CSS.
@@ -104,12 +98,5 @@ function App() {
     </>
   )
 }
-
-
-
-
-
-
-
 
 export default App
