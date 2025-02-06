@@ -14,7 +14,7 @@ function App() {
       target: scope,
       offset: ["start start", "end end"]
     }
-  );
+  )
 
   useMotionValueEvent(scrollYProgress, 'change', (val) => setscrollpercent(`${val * -100}%`));
 
